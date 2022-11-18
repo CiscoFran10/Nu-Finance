@@ -66,7 +66,7 @@ const Home = ({ setIsloggedIn }) => {
 		<StyledHome>
 			<div className="container">
 				<div className="intro">
-					<img src="/src/assets/NuKenzie.svg" alt="Nu kenzie logo" />
+					<img src="/public/assets/NuKenzie.svg" alt="Nu kenzie logo" />
 					<h1>Centralize o controle das suas finanças</h1>
 					<p>de forma rápida e segura</p>
 					<Button callback={() => setIsloggedIn(true)}>Iniciar</Button>
@@ -74,7 +74,7 @@ const Home = ({ setIsloggedIn }) => {
 
 				<div className="intro-image">
 					<img
-						src="/src/assets/illustration.svg"
+						src="/public/assets/illustration.svg"
 						alt="Todo list illustration"
 					/>
 				</div>

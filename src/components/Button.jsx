@@ -31,12 +31,12 @@ const StyledButton = styled.button`
 
 		&.img {
 			padding: 20px;
-			background: var(--grey-2) url("src/assets/trash-dark.svg") no-repeat
+			background: var(--grey-2) url("/public/assets/trash-dark.svg") no-repeat
 				center;
 
 			&:hover {
-				background: var(--grey-5) url("src/assets/trash-light.svg") no-repeat
-					center;
+				background: var(--grey-5) url("/public/assets/trash-light.svg")
+					no-repeat center;
 			}
 		}
 
