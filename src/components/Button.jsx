@@ -31,11 +31,11 @@ const StyledButton = styled.button`
 
 		&.img {
 			padding: 20px;
-			background: var(--grey-2) url("/public/assets/trash-dark.svg") no-repeat
+			background: var(--grey-2) url("/assets/trash-dark.svg") no-repeat
 				center;
 
 			&:hover {
-				background: var(--grey-5) url("/public/assets/trash-light.svg")
+				background: var(--grey-5) url("/assets/trash-light.svg")
 					no-repeat center;
 			}
 		}

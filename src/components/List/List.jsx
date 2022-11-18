@@ -134,9 +134,9 @@ const List = ({ data, setData }) => {
 				) : (
 					<>
 						<h2>Você ainda não possui nenhum lançamento</h2>
-						<img src="/public/assets/NoCard.svg" alt="no card" />
-						<img src="/public/assets/NoCard.svg" alt="no card" />
-						<img src="/public/assets/NoCard.svg" alt="no card" />
+						<img src="/assets/NoCard.svg" alt="no card" />
+						<img src="/assets/NoCard.svg" alt="no card" />
+						<img src="/assets/NoCard.svg" alt="no card" />
 					</>
 				)}
 			</ul>

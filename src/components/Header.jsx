@@ -18,7 +18,7 @@ const Header = ({ setIsLoggedIn }) => {
 	return (
 		<StyledHeader>
 			<div className="container">
-				<img src="/public/assets/NuKenzie-dark.svg" alt="Nu kenzie" />
+				<img src="/assets/NuKenzie-dark.svg" alt="Nu kenzie" />
 				<nav>
 					<Button className="grey" callback={() => setIsLoggedIn(false)}>
 						Inicio
