@@ -46,6 +46,10 @@ const StyledTotal = styled.div`
 `;
 
 const TotalMoney = ({ data }) => {
+	if (data.length < 1) {
+		return null;
+	}
+
 	const entries = data
 		.filter((item) => item.type === "Entrada")
 		.reduce((a, b) => a + +b.value, 0);
