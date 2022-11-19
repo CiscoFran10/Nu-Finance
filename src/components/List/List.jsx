@@ -74,8 +74,6 @@ const List = ({ data, setData }) => {
 	const [list, setList] = useState(JSON.parse(localStorage.getItem("List")));
 	const [active, setActive] = useState("Todos");
 
-	console.log(list);
-
 	React.useEffect(() => {
 		setList(data);
 		localStorage.setItem("List", JSON.stringify(data));
