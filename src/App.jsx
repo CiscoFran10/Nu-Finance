@@ -41,7 +41,7 @@ const StyledDashboard = styled.main`
 `;
 
 function App() {
-	const [data, setData] = useState([]);
+	const [data, setData] = useState(JSON.parse(localStorage.getItem("List")));
 	const [isLoggedIn, setIsLoggedIn] = useState(false);
 
 	return (

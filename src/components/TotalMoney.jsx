@@ -7,8 +7,8 @@ const StyledTotal = styled.div`
 	display: flex;
 	flex-direction: column;
 	gap: 6px;
-
 	border: 2px solid var(--grey-2);
+	animation: slideTop 0.4s ease;
 
 	.total-header {
 		display: flex;
@@ -30,6 +30,19 @@ const StyledTotal = styled.div`
 			color: var(--grey-3);
 		}
 	}
+
+	@keyframes slideTop {
+		from {
+			opacity: 0;
+			filter: blur(4px);
+			transform: translateY(-40px);
+		}
+		to {
+			opacity: 1;
+			filter: blur(0);
+			transform: translateY(0);
+		}
+	}
 `;
 
 const TotalMoney = ({ data }) => {
@@ -43,13 +56,17 @@ const TotalMoney = ({ data }) => {
 
 	const total = entries - expenses;
 	return (
-		<StyledTotal>
-			<div className="total-header">
-				<h2>Valor Total:</h2>
-				<span>$ {total}</span>
-			</div>
-			<p>O valor se refere ao saldo</p>
-		</StyledTotal>
+		<>
+			{data.length > 0 && (
+				<StyledTotal>
+					<div className="total-header">
+						<h2>Valor Total:</h2>
+						<span>$ {total}</span>
+					</div>
+					<p>O valor se refere ao saldo</p>
+				</StyledTotal>
+			)}
+		</>
 	);
 };
 

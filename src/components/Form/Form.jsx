@@ -67,7 +67,6 @@ const Form = ({ data, setData }) => {
 	function handleSubmit(event) {
 		event.preventDefault();
 		setData([...data, input]);
-
 		setInput({ description: "", type: "Entrada", value: "" });
 	}
 

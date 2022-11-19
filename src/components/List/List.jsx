@@ -71,11 +71,14 @@ const StyledList = styled.section`
 `;
 
 const List = ({ data, setData }) => {
-	const [list, setList] = useState(null);
+	const [list, setList] = useState(JSON.parse(localStorage.getItem("List")));
 	const [active, setActive] = useState("Todos");
+
+	console.log(list);
 
 	React.useEffect(() => {
 		setList(data);
+		localStorage.setItem("List", JSON.stringify(data));
 		setActive("Todos");
 	}, [data]);
 
@@ -94,6 +97,7 @@ const List = ({ data, setData }) => {
 	const handleDelete = (index) => {
 		const filteredList = data.filter((item) => data.indexOf(item) !== index);
 		setData(filteredList);
+		localStorage.setItem("List", JSON.stringify(filteredList));
 	};
 
 	return (
