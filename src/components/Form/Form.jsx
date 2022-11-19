@@ -82,9 +82,8 @@ const Form = ({ data, setData }) => {
 						handleChange={handleChange}
 					/>
 				</label>
-
 				<span>Ex: Compra de roupas</span>
-
+				
 				<div className="flex">
 					<label>
 						Valor
