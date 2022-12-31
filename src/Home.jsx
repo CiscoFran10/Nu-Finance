@@ -21,7 +21,7 @@ const StyledHome = styled.main`
 		gap: 28px;
 		color: #fff;
 
-		h1 {
+		h2 {
 			font-weight: 700;
 			max-width: 15ch;
 			font-size: var(--title-1);
