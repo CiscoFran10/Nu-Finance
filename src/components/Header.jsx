@@ -5,7 +5,7 @@ import Button from "./Button";
 const StyledHeader = styled.header`
 	padding: 20px 0;
 	background: var(--grey-1);
-	box-shadow: 0px 2px 4px 2px rgba(0, 0, 0, .1);
+	box-shadow: 0px 2px 4px 2px rgba(0, 0, 0, 0.1);
 
 	.container {
 		display: flex;
@@ -18,7 +18,7 @@ const Header = ({ setIsLoggedIn }) => {
 	return (
 		<StyledHeader>
 			<div className="container">
-				<img src="/assets/NuKenzie-dark.svg" alt="Nu kenzie" />
+				<h1>Nu Finance</h1>
 				<nav>
 					<Button className="grey" callback={() => setIsLoggedIn(false)}>
 						Inicio
