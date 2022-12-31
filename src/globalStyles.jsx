@@ -78,6 +78,10 @@ select {
 	padding: 0 20px;
 }
 
+.title span {
+	color: var(--color-primary);
+}
+
 /* @media (prefers-color-scheme: dark) {
 	#root {
 		color: #ffffff;

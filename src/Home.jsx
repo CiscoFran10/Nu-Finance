@@ -66,7 +66,7 @@ const Home = ({ setIsloggedIn }) => {
 		<StyledHome>
 			<div className="container">
 				<div className="intro">
-					<h1>Nu Finance</h1>
+					<h1 className="title">Nu Finance</h1>
 					<h2>Centralize o controle das suas finanças</h2>
 					<p>de forma rápida e segura</p>
 					<Button callback={() => setIsloggedIn(true)}>Iniciar</Button>

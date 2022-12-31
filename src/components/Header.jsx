@@ -18,7 +18,7 @@ const Header = ({ setIsLoggedIn }) => {
 	return (
 		<StyledHeader>
 			<div className="container">
-				<h1>Nu Finance</h1>
+				<h1 className="title"><span>Nu</span> Finance</h1>
 				<nav>
 					<Button className="grey" callback={() => setIsLoggedIn(false)}>
 						Inicio
