@@ -38,7 +38,7 @@ const StyledHome = styled.main`
 	}
 
 	@media (max-width: 600px) {
-		.intro h1 {
+		.intro h2 {
 			font-size: var(--title-2);
 		}
 	}
@@ -50,7 +50,7 @@ const StyledHome = styled.main`
 			gap: 0px;
 		}
 
-		.intro h1 {
+		.intro h2 {
 			max-width: 25ch;
 			font-size: var(--title-2);
 		}
@@ -66,7 +66,7 @@ const Home = ({ setIsloggedIn }) => {
 		<StyledHome>
 			<div className="container">
 				<div className="intro">
-					<h1 className="title">Nu Finance</h1>
+					<h1 className="title"><span>Nu</span> Finance</h1>
 					<h2>Centralize o controle das suas finanças</h2>
 					<p>de forma rápida e segura</p>
 					<Button callback={() => setIsloggedIn(true)}>Iniciar</Button>
